@@ -1,0 +1,12 @@
+<div style="text-align:center; padding: 50px; font-family: sans-serif;">
+  <h1>Laboratorio Nginx FullStack</h1>
+
+  <div style="border: 1px solid #ccc; padding: 20px; display: inline-block; border-radius: 8px;">
+    <input type="text" [(ngModel)]="nombreUsuario" placeholder="Escribe tu nombre">
+    <button (click)="enviarSaludo()">Enviar al Backend</button>
+  </div>
+
+  <h3 *ngIf="respuestaServidor" style="color: green; margin-top: 20px;">
+    {{ respuestaServidor }}
+  </h3>
+</div>
